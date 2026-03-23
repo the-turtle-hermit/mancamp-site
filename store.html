@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store | Man Camp South</title>
+  <meta name="description" content="Simple, configurable storefront for Man Camp South merchandise and future checkout links." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="alternate icon" href="favicon.png" type="image/png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/config.js"></script>
+  <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><img src="assets/brand/logo-mcs.svg" alt="MCS logo"><span>MAN CAMP SOUTH</span></a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="details.html">Details</a>
+        <a class="active" href="store.html">Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-subpage" style="--hero-bg:url('assets/images/campfire-wide.jpg')">
+    <div class="container hero-inner">
+      <div class="eyebrow">Storefront</div>
+      <h1>Simple, clean, and easy to configure</h1>
+      <p class="lead">This page is intentionally built for low-friction e-commerce setup: product cards on the front end, checkout links on the back end.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section-tight">
+      <div class="container banner">
+        <img src="assets/brand/banner-mcs.png" alt="Man Camp South banner">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="card">
+          <div class="eyebrow">How this store works</div>
+          <h2>Best budget-friendly setup</h2>
+          <p>This front-end store is ready for simple product management. Each product card uses an image, name, price, description, and buy button. Later, each buy button can point to a Stripe Payment Link or another checkout path.</p>
+          <p class="small">That means you can honestly sell: e-commerce setup, product pages, checkout + payments, and basic store configuration — without overbuilding the system on day one.</p>
+        </div>
+        <div class="card">
+          <div class="eyebrow">Easy edits</div>
+          <h2>What changes later</h2>
+          <div class="notice mono">Edit <strong>assets/js/config.js</strong><br>Update product name, image, price, description, and buyUrl.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="eyebrow">Featured products</div>
+        <h2>Store page shell</h2>
+        <div class="products-grid" id="products-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><strong>Man Camp South</strong><br><span class="small">Merch, gear, and future checkout links.</span></div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="details.html">Details</a>
+        <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
+      </div>
+      <div class="small">© <span id="year"></span> Man Camp South</div>
+    </div>
+  </footer>
+</body>
+</html>
