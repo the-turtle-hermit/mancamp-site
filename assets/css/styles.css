@@ -302,3 +302,11 @@ p{margin:0 0 1rem;color:var(--muted)}
 .registration-actions{display:grid;gap:.8rem;margin-top:.2rem}
 .btn-register-lg{min-height:56px;font-size:1rem;padding:0 1.4rem;box-shadow:0 14px 30px rgba(242,139,17,.22)}
 .btn-register-lg:after{content:"→";margin-left:.65rem;font-size:1.05rem}
+
+
+/* v9 refinements */
+.brand img.site-logo,.footer-logo{filter:drop-shadow(0 0 10px rgba(255,255,255,.16)) drop-shadow(0 4px 20px rgba(0,0,0,.35));}
+.registration-card-inline{min-height:auto;grid-template-columns:minmax(0,1fr) auto;align-items:center;padding:1.4rem 1.5rem;}
+.registration-card-inline .small-card-copy{max-width:50ch;}
+.registration-section{padding-top:28px;padding-bottom:10px;}
+@media (max-width:820px){.registration-card-inline{grid-template-columns:1fr;}}
