@@ -11,8 +11,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="https://events.franklynsolutions.com/mancampsouth/mcs-2027/widget/v2.css" crossorigin />
   <script defer src="assets/js/config.js"></script>
   <script defer src="assets/js/site.js"></script>
+  <script type="text/javascript" src="https://events.franklynsolutions.com/widget/v2.en.js" async crossorigin></script>
 </head>
 <body>
   <header class="site-header">
@@ -35,35 +37,34 @@
     <section class="hero hero-clean">
       <div class="container hero-inner hero-grid">
         <div class="hero-copy hero-copy-tight">
-          <div class="hero-kicker">March 5–7, 2027 • Amite, Louisiana • Registration opens soon</div>
-          <div class="hero-mark hero-mark-large" aria-label="Man Camp South">
-            <div class="hero-wordmark">MANCAMP</div>
-            <div class="hero-submark"><span></span><strong>SOUTH</strong><span></span></div>
-          </div>
-          <h1>General information, event details, and registration updates in one clean place.</h1>
-          <p class="lead" data-mission></p>
+          <div class="hero-kicker">March 5–7, 2027 • Amite, Louisiana • Registration open</div>
+          <h1>Forge Brotherhood.<br>Strengthen Faith.<br>Step Off the Grid.</h1>
+          <p class="lead">Man Camp South is a straightforward, faith-centered weekend for men who want challenge, honest conversation, biblical teaching, and time away from the noise.</p>
           <div class="btn-row">
-            <a class="btn btn-primary" href="details.html">View event details</a>
-            <a class="btn btn-secondary" href="about.html">What is Man Camp?</a>
+            <a class="btn btn-primary" href="#registration-widget">Register now</a>
+            <a class="btn btn-secondary" href="details.html">View event details</a>
           </div>
         </div>
-        <div class="hero-aside card glass-card">
-          <div class="eyebrow">Main focus</div>
-          <h3>Registration, practical details, and the camp itself.</h3>
-          <p>This demo keeps the public experience centered on what attendees need most first. Speaker photos, more bios, and merchandising can be layered in later without rebuilding the site.</p>
-          <div class="mini-points">
-            <div><strong>Registration-ready</strong><span>Placement is prepared and can point to the live registration app once finalized.</span></div>
-            <div><strong>Simple navigation</strong><span>Home, About, and Details only, so the path stays clear.</span></div>
-          </div>
+        <div class="hero-aside card glass-card pretix-shell" id="registration-widget">
+          <div class="eyebrow">Register on site</div>
+          <h3>Reserve your spot without leaving the website.</h3>
+          <pretix-widget event="https://events.franklynsolutions.com/mancampsouth/mcs-2027/" subevent="1"></pretix-widget>
+          <noscript>
+            <div class="pretix-widget pretix-fallback">
+              <div class="pretix-widget-info-message">
+                JavaScript is disabled in your browser. To access registration, please <a target="_blank" rel="noopener" href="https://events.franklynsolutions.com/mancampsouth/mcs-2027/1/">click here</a>.
+              </div>
+            </div>
+          </noscript>
         </div>
       </div>
     </section>
 
     <section class="section-sm">
-      <div class="container gallery-band gallery-band-polished">
-        <img src="assets/images/campfire-wide-card.jpg" alt="Campfire cooking at night">
-        <img src="assets/images/steaks-vertical-card.jpg" alt="Cooking over fire">
-        <img src="assets/images/pot-vertical-card.jpg" alt="Dutch oven on coals">
+      <div class="container gallery-band gallery-band-polished gallery-band-squares">
+        <img src="assets/images/seasoning-steak-at-campsite.jpg" alt="Preparing food at camp">
+        <img src="assets/images/camper-arriving-with-gear.jpg" alt="Camper arriving with gear beside a tent">
+        <img src="assets/images/camp-group-photo-2.jpg" alt="Group photo at camp">
       </div>
     </section>
 
@@ -72,38 +73,6 @@
         <article class="card flat compact-card"><h3>Dates</h3><p>March 5–7, 2027</p></article>
         <article class="card flat compact-card"><h3>Location</h3><p>Lion King Ministries<br><span class="small">Amite, Louisiana</span></p></article>
         <article class="card flat compact-card"><h3>Pricing</h3><p>Early Bird, Standard, Late, and Free Volunteer registration</p></article>
-      </div>
-    </section>
-
-
-
-    <section class="section-tight">
-      <div class="container">
-        <div class="card accent-card">
-          <div class="eyebrow">Featured guest speaker</div>
-          <h2>Jonnie W.</h2>
-          <p>Guest speaker Jonnie W. has been added to the event preview. He is known for combining music, off-beat standup, and a family-friendly live comedy style that has been featured across churches, conferences, and events nationwide.</p>
-          <p class="small">Full speaker photos and additional bios can be expanded later as more guests are finalized.</p>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container split split-balanced">
-        <div class="card">
-          <div class="eyebrow">For demo review</div>
-          <h2>Clean now, easy to expand later.</h2>
-          <p>This version stays intentionally lean so the client can review structure, tone, and flow without getting distracted by items that are still being finalized.</p>
-          <p class="muted-note">Guest speakers, final venue address, and the live registration app can be dropped into the existing structure as soon as they are ready.</p>
-        </div>
-        <div class="card accent-card">
-          <div class="eyebrow">Recommended registration flow</div>
-          <h3>Use the Details page as the public entry point.</h3>
-          <p>Keep the homepage CTA pointed to the Details page for now. Once the registration app is live, the primary button on both Home and Details should point directly to the registration site.</p>
-          <div class="btn-row">
-            <a class="btn btn-primary" href="details.html">Open details</a>
-            <a class="btn btn-secondary" data-email href="mailto:mancampsouth@gmail.com">Ask a question</a>
-          </div>
-        </div>
       </div>
     </section>
   </main>
