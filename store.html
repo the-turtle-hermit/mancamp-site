@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Store | Man Camp South</title>
-  <meta name="description" content="Simple, configurable storefront for Man Camp South merchandise and future checkout links." />
+  <meta name="description" content="Hidden store shell for future merchandise launch." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:title" content="Store | Man Camp South" /><meta property="og:description" content="Hidden store shell for future merchandise launch." /><meta property="og:image" content="assets/brand/banner-wordmark.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -12,69 +14,52 @@
   <script defer src="assets/js/site.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/brand/logo-mcs.svg" alt="MCS logo"><span>MAN CAMP SOUTH</span></a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="details.html">Details</a>
-        <a class="active" href="store.html">Store</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero-subpage" style="--hero-bg:url('assets/images/campfire-wide.jpg')">
-    <div class="container hero-inner">
-      <div class="eyebrow">Storefront</div>
-      <h1>Easy to configure. Easy to grow.</h1>
-      <p class="lead">This page is built for clean product cards now and simple checkout links later, without forcing you into a heavy store platform on day one.</p>
-    </div>
-  </section>
+  
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Man Camp South home">
+      <img src="assets/brand/logo-wordmark.svg" alt="Man Camp South">
+    </a>
+    <nav class="nav">
+      <a  href="index.html">Home</a>
+      <a  href="about.html">About</a>
+      <a  href="details.html">Details</a>
+    </nav>
+  </div>
+</header>
 
   <main>
-    <section class="section-sm">
-      <div class="container banner">
-        <img src="assets/brand/banner-mcs.png" alt="Man Camp South banner">
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div class="card">
-          <div class="eyebrow">How this works</div>
-          <h2>Good fit for a budget-friendly launch</h2>
-          <p>Each product card uses an image, name, price, short description, and buy button. When you are ready, each button can point to a Stripe Payment Link or another checkout path.</p>
-          <p class="small">That gives you a legitimate e-commerce setup without overcomplicating the project or raising the ongoing cost too early.</p>
-        </div>
-        <div class="card">
-          <div class="eyebrow">Easy edits</div>
-          <h2>One simple config file</h2>
-          <div class="notice mono">Edit <strong>assets/js/config.js</strong><br>Change product name, image, price, description, and buyUrl.</div>
-        </div>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
-        <div class="eyebrow">Featured products</div>
-        <h2>Store page shell</h2>
+        <div class="card">
+          <div class="eyebrow">Hidden for now</div>
+          <h1 style="max-width:none">Store page saved for a future merch launch.</h1>
+          <p class="lead">This page has been intentionally removed from site navigation until merchandise is ready. The structure stays in place so products and checkout links can be turned on later without rebuilding the site.</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-sm">
+      <div class="container">
         <div class="products-grid" id="products-grid"></div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div><strong>Man Camp South</strong><br><span class="small">Merch, gear, and future checkout links.</span></div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="details.html">Details</a>
-        <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
-      </div>
-      <div class="small">© <span id="year"></span> Man Camp South</div>
+  
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Man Camp South</strong><br>
+      <span class="small">General information, event details, and registration updates.</span>
     </div>
-  </footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="details.html">Details</a>
+      <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
+    </div>
+    <div class="small">© <span id="year"></span> Man Camp South</div>
+  </div>
+</footer>
+
 </body>
 </html>

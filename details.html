@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Details | Man Camp South</title>
-  <meta name="description" content="Event details, schedule, pricing, logistics, and registration updates for Man Camp South." />
+  <meta name="description" content="March 5–7, 2027 details, pricing, schedule, what to bring, waiver, and registration information." />
+  
+  <meta property="og:title" content="Details | Man Camp South" /><meta property="og:description" content="March 5–7, 2027 details, pricing, schedule, what to bring, waiver, and registration information." /><meta property="og:image" content="assets/brand/banner-wordmark.png" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="alternate icon" href="favicon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -12,43 +14,51 @@
   <script defer src="assets/js/site.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html"><img src="assets/brand/logo-mcs.svg" alt="MCS logo"><span>MAN CAMP SOUTH</span></a>
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a class="active" href="details.html">Details</a>
-        <a href="store.html">Store</a>
-      </nav>
-    </div>
-  </header>
+  
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Man Camp South home">
+      <img src="assets/brand/logo-wordmark.svg" alt="Man Camp South">
+    </a>
+    <nav class="nav">
+      <a  href="index.html">Home</a>
+      <a  href="about.html">About</a>
+      <a class="active" href="details.html">Details</a>
+    </nav>
+  </div>
+</header>
 
-  <section class="hero-subpage" style="--hero-bg:url('assets/images/pot-vertical.jpg')">
+  <section class="hero-subpage" style="--hero-bg:url('assets/images/campfire-wide.jpg')">
     <div class="container hero-inner">
       <div class="eyebrow">Event details</div>
-      <h1>Schedule, pricing, and registration live here.</h1>
-      <p class="lead">This page is already structured for dates, logistics, what to bring, FAQs, and the eventual registration button.</p>
+      <h1>Everything attendees need in one place.</h1>
+      <p class="lead">Dates, pricing, schedule, packing list, waiver notes, and the registration call-to-action all belong here.</p>
+      <div class="btn-row">
+        <a class="btn btn-primary btn-disabled" aria-disabled="true">Registration opens soon</a>
+        <a class="btn btn-secondary" data-email href="mailto:mancampsouth@gmail.com">Ask a question</a>
+      </div>
     </div>
   </section>
 
   <main>
+    <section class="section-tight">
+      <div class="container">
+        <div class="notice"><strong>Important:</strong> Exact venue address, final start and end times, volunteer cap, sponsorship decision, and final waiver text are still pending confirmation. The current public details below reflect the approved working information.</div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container split">
         <div class="card">
-          <div class="eyebrow">Current status</div>
-          <h2>Ready for real event info</h2>
-          <p>As final event details are confirmed, this page can be updated without redesigning anything. Dates, pricing, schedule, and registration can all be managed here.</p>
-          <div class="kv" id="event-details"></div>
-          <div class="btn-row" style="margin-top:1rem">
-            <a class="btn btn-primary btn-disabled" aria-disabled="true">Registration opening soon</a>
-            <a class="btn btn-secondary" data-email href="mailto:mancampsouth@gmail.com">Ask a question</a>
-          </div>
+          <div class="eyebrow">At a glance</div>
+          <h2>Confirmed event information</h2>
+          <div class="kv-list" id="event-details"></div>
         </div>
         <div class="card">
-          <div class="eyebrow">What to bring</div>
-          <h2>Simple prep list</h2>
-          <div class="checklist" id="bring-list"></div>
+          <div class="eyebrow">Pricing</div>
+          <h2>Simple tiered registration</h2>
+          <p class="lead">Flat pricing structure with no group discounts. Volunteer registration remains free.</p>
+          <div class="grid-2" id="pricing-grid"></div>
         </div>
       </div>
     </section>
@@ -56,44 +66,71 @@
     <section class="section">
       <div class="container split">
         <div class="card">
-          <div class="eyebrow">Weekend flow</div>
-          <h2>Sequence of events</h2>
-          <p>The timeline below is already wired to your config file, so you can change the order or wording later without touching the page layout.</p>
+          <div class="eyebrow">Schedule</div>
+          <h2>Current event flow</h2>
           <div class="timeline" id="timeline"></div>
         </div>
-        <div class="panel-image">
-          <img src="assets/images/steaks-vertical.jpg" alt="Food being prepared over fire">
+        <div class="card">
+          <div class="eyebrow">Packing + policies</div>
+          <h2>What to bring</h2>
+          <div class="check-list" id="bring-list"></div>
+          <div style="height:1rem"></div>
+          <div class="notice">
+            <strong>Registration policy:</strong> Waiver required. No refunds. No cancellations.<br>
+            <span class="small">Medical information and media release are not currently required in the registration flow.</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <section class="section-sm">
+      <div class="container gallery-band">
+        <img src="assets/images/campfire-wide-card.jpg" alt="Campfire cooking at night">
+        <img src="assets/images/steaks-vertical-card.jpg" alt="Cooking over fire">
+        <img src="assets/images/pot-vertical-card.jpg" alt="Dutch oven on coals">
+      </div>
+    </section>
+
     <section class="section">
-      <div class="container grid-2">
-        <article class="card">
-          <div class="eyebrow">Pricing</div>
-          <h3>Ready for your pricing options</h3>
-          <p>Use this page later for general admission, early pricing, group pricing, volunteer paths, or anything else you decide to offer.</p>
-        </article>
-        <article class="card">
-          <div class="eyebrow">Registration path</div>
-          <h3>Built to plug into your future system</h3>
-          <p>When registration is ready, the main button can point to pretix or another registration and payment flow while the site itself stays clean and simple.</p>
-        </article>
+      <div class="container">
+        <div class="eyebrow">Frequently asked</div>
+        <h2>Practical attendee information</h2>
+        <div class="faq-grid" id="faq-grid"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-band">
+          <div>
+            <div class="eyebrow">Registration</div>
+            <h3>Registration button placement is ready and can go live as soon as the app is finalized.</h3>
+            <p class="small">Primary form fields approved: name, email, phone, church attendance, and special requests / notes.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary btn-disabled" aria-disabled="true">Registration opens soon</a>
+            <a class="btn btn-secondary" data-email href="mailto:mancampsouth@gmail.com">Contact the team</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div><strong>Man Camp South</strong><br><span class="small">Details, schedule, pricing, registration.</span></div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="store.html">Store</a>
-        <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
-      </div>
-      <div class="small">© <span id="year"></span> Man Camp South</div>
+  
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>Man Camp South</strong><br>
+      <span class="small">General information, event details, and registration updates.</span>
     </div>
-  </footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="details.html">Details</a>
+      <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
+    </div>
+    <div class="small">© <span id="year"></span> Man Camp South</div>
+  </div>
+</footer>
+
 </body>
 </html>
