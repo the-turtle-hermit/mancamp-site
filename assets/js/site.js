@@ -20,35 +20,58 @@
 
   const details = document.getElementById('event-details');
   if (details && cfg.event?.details) {
-    details.innerHTML = cfg.event.details.map(([k,v]) => `
+    details.innerHTML = cfg.event.details.map(([k, v]) => `
       <div class="kv-row"><strong>${k}</strong><div>${v}</div></div>`).join('');
+  }
+
+  const pricing = document.getElementById('pricing-grid');
+  if (pricing && cfg.event?.pricing) {
+    pricing.innerHTML = cfg.event.pricing.map(([title, desc], i) => `
+      <article class="card flat">
+        <div class="icon-badge">${i + 1}</div>
+        <h3>${title}</h3>
+        <p>${desc}</p>
+      </article>`).join('');
   }
 
   const bring = document.getElementById('bring-list');
   if (bring && cfg.event?.bring) {
-    bring.innerHTML = cfg.event.bring.map(item => `<div><span class="check">✓</span><span>${item}</span></div>`).join('');
+    bring.innerHTML = cfg.event.bring.map(item => `
+      <div><span class="check">✓</span><span>${item}</span></div>`).join('');
   }
+
+  const faq = document.getElementById('faq-grid');
+  if (faq && cfg.event?.faq) {
+    faq.innerHTML = cfg.event.faq.map(([q, a]) => `
+      <article class="card flat">
+        <h3>${q}</h3>
+        <p>${a}</p>
+      </article>`).join('');
+  }
+
+  const mission = document.querySelectorAll('[data-mission]');
+  mission.forEach(el => { if (cfg.event?.mission) el.textContent = cfg.event.mission; });
 
   const products = document.getElementById('products-grid');
   if (products && cfg.products) {
     products.innerHTML = cfg.products.map(item => {
       const disabled = !item.buyUrl || item.buyUrl === '#';
       return `
-      <article class="product-card">
-        <div class="product-media"><img src="${item.image}" alt="${item.name}"></div>
-        <div class="product-body">
-          <span class="tag">${item.category}</span>
-          <h3>${item.name}</h3>
-          <p>${item.description}</p>
-          <div class="product-meta">
-            <div class="price">${item.price}</div>
-            <div class="small">${item.status || ''}</div>
+        <article class="product-card">
+          <div class="product-media"><img src="${item.image}" alt="${item.name}"></div>
+          <div class="product-body">
+            <span class="tag">${item.category}</span>
+            <h3>${item.name}</h3>
+            <p>${item.description}</p>
+            <div class="product-meta">
+              <div class="price">${item.price}</div>
+              <div class="small">${item.status || ''}</div>
+            </div>
+            <a class="btn ${disabled ? 'btn-secondary btn-disabled' : 'btn-primary'}" ${disabled ? 'aria-disabled="true"' : `href="${item.buyUrl}" target="_blank" rel="noreferrer"`}>
+              ${disabled ? 'Checkout link coming soon' : 'Buy now'}
+            </a>
           </div>
-          <a class="btn ${disabled ? 'btn-secondary btn-disabled' : 'btn-primary'}" ${disabled ? 'aria-disabled="true"' : `href="${item.buyUrl}" target="_blank" rel="noreferrer"`}>
-            ${disabled ? 'Checkout link coming soon' : 'Buy now'}
-          </a>
-        </div>
-      </article>`;
+        </article>`;
     }).join('');
   }
 })();

@@ -1,59 +1,156 @@
 window.MCS_CONFIG = {
-  contactEmail: 'mancampsouth@gmail.com',
-  event: {
-    status: 'Launching soon',
-    season: 'Upcoming South event',
-    location: 'South region details coming soon',
-    pricingNote: 'Pricing and registration will be published on this page once finalized.',
-    details: [
-      ['Dates', 'To be announced'],
-      ['Location', 'To be announced'],
-      ['Registration', 'Opening soon'],
-      ['Camping style', 'Rugged / outdoor-forward'],
-      ['Contact', 'mancampsouth@gmail.com']
+  "contactEmail": "mancampsouth@gmail.com",
+  "event": {
+    "status": "Registration opens soon",
+    "season": "March 5\u20137, 2027",
+    "location": "Amite City, Louisiana",
+    "mission": "Man Camp South exists to disciple men into a deeper relationship with Jesus Christ through fellowship, biblical teachings, and intentional community.",
+    "pricingNote": "Flat pricing. No group discounts. Volunteer registration is free. No refunds or cancellations.",
+    "details": [
+      [
+        "Event",
+        "Man Camp South 2027"
+      ],
+      [
+        "Dates",
+        "March 5\u20137, 2027"
+      ],
+      [
+        "Registration cutoff",
+        "February 19, 2027"
+      ],
+      [
+        "Location",
+        "Amite City, Louisiana"
+      ],
+      [
+        "Capacity target",
+        "1,500 men"
+      ],
+      [
+        "Group limit",
+        "Up to 12 per group"
+      ],
+      [
+        "Volunteer registration",
+        "Free"
+      ],
+      [
+        "Refunds",
+        "No refunds / no cancellations"
+      ],
+      [
+        "Waiver",
+        "Required in registration"
+      ],
+      [
+        "Contact",
+        "mancampsouth@gmail.com"
+      ]
     ],
-    schedule: [
-      ['Arrival + check-in', 'Get settled, meet the crew, and prepare for the weekend.'],
-      ['Campfire + opening session', 'A strong start centered on brotherhood, challenge, and faith.'],
-      ['Worship + teaching', 'No-frills teaching, honest conversations, and time to refocus.'],
-      ['Outdoor challenge', 'Activities designed to move men out of comfort and into growth.'],
-      ['Closing push', 'Leave grounded, sharpened, and more intentional than when you arrived.']
+    "schedule": [
+      [
+        "Friday \u2014 Gates open",
+        "12:00 PM"
+      ],
+      [
+        "Friday \u2014 Opening service",
+        "7:00 PM"
+      ],
+      [
+        "Saturday \u2014 Morning service",
+        "8:00 AM"
+      ],
+      [
+        "Saturday \u2014 Solitude",
+        "9:30 AM"
+      ],
+      [
+        "Saturday \u2014 Games",
+        "11:30 AM"
+      ],
+      [
+        "Saturday \u2014 Lunch",
+        "12:00 PM"
+      ],
+      [
+        "Saturday \u2014 Evening service",
+        "6:30 PM"
+      ],
+      [
+        "Sunday \u2014 Morning service",
+        "9:00 AM"
+      ],
+      [
+        "Sunday \u2014 Baptisms",
+        "10:30 AM"
+      ],
+      [
+        "Sunday \u2014 Dismissal",
+        "12:00 PM"
+      ]
     ],
-    bring: [
-      'Tent / sleep setup',
-      'Outdoor clothing and boots',
-      'Water bottle and personal essentials',
-      'Bible / journal if desired',
-      'A willingness to unplug and show up fully'
+    "pricing": [
+      [
+        "Early Bird",
+        "$119.99 \u00b7 Mar 1 \u2013 Aug 1"
+      ],
+      [
+        "Standard",
+        "$129.99 \u00b7 Aug 2 \u2013 Dec 31"
+      ],
+      [
+        "Late",
+        "$139.99 \u00b7 Jan 1 \u2013 Feb 19"
+      ],
+      [
+        "Volunteer",
+        "Free"
+      ]
+    ],
+    "bring": [
+      "Tent",
+      "Backpack",
+      "Sleeping bag",
+      "Food",
+      "Prepare for rain or shine"
+    ],
+    "faq": [
+      [
+        "Do I need to complete a waiver?",
+        "Yes. A waiver will be built directly into registration and must be accepted before checkout."
+      ],
+      [
+        "Are refunds available?",
+        "No. Registrations are non-refundable and non-cancellable."
+      ],
+      [
+        "Is medical information required?",
+        "No medical information is currently required in the registration flow."
+      ],
+      [
+        "Is a media release required?",
+        "No media release is currently required."
+      ],
+      [
+        "What lodging is available?",
+        "Handicap-accessible bunk rooms are confirmed. More lodging details will be added once finalized."
+      ],
+      [
+        "Will there be speakers listed later?",
+        "Yes. Speaker photos and short bios will be added once guest speakers are aligned and contracted."
+      ]
     ]
   },
-  products: [
+  "products": [
     {
-      name: 'MCS Tee',
-      price: '$30',
-      category: 'Apparel',
-      image: 'assets/images/campfire-wide-card.jpg',
-      description: 'Soft launch placeholder for a simple branded camp shirt.',
-      buyUrl: '#',
-      status: 'Coming soon'
-    },
-    {
-      name: 'MCS Mug',
-      price: '$22',
-      category: 'Gear',
-      image: 'assets/images/pot-vertical-card.jpg',
-      description: 'Easy first merch item for announcements, gifts, or event bundles.',
-      buyUrl: '#',
-      status: 'Coming soon'
-    },
-    {
-      name: 'Camp Patch',
-      price: '$12',
-      category: 'Accessories',
-      image: 'assets/images/steaks-vertical-card.jpg',
-      description: 'Low-cost add-on item that works well once store links are live.',
-      buyUrl: '#',
-      status: 'Coming soon'
+      "name": "MCS Tee",
+      "price": "$30",
+      "category": "Apparel",
+      "image": "assets/images/campfire-wide-card.jpg",
+      "description": "Store kept off-navigation for now. Product cards stay ready for a later merch launch.",
+      "buyUrl": "#",
+      "status": "Hidden for now"
     }
   ]
 };
