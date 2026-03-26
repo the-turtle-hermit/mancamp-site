@@ -276,7 +276,7 @@ p{margin:0 0 1rem;color:var(--muted)}
 }
 
 
-.gallery-band-centered{grid-template-columns:.9fr 1.4fr .9fr;align-items:center}
+.gallery-band-centered{grid-template-columns:repeat(3,minmax(0,1fr));align-items:center}
 .gallery-band-centered img:first-child,.gallery-band-centered img:last-child{aspect-ratio:1/1;height:auto}
 .gallery-band-centered img:nth-child(2){aspect-ratio:1/1;height:auto;object-fit:cover}
 .pretix-widget-note{color:var(--muted);margin-top:-.2rem}
@@ -294,3 +294,11 @@ p{margin:0 0 1rem;color:var(--muted)}
   .gallery-band-centered img:first-child,.gallery-band-centered img:last-child{aspect-ratio:16/10}
   .gallery-band-centered img:nth-child(2){height:240px}
 }
+
+
+.registration-card{display:grid;gap:1rem;align-content:center;min-height:360px}
+.registration-card h3{font-size:1.5rem;margin-bottom:.1rem}
+.small-card-copy{max-width:34ch;margin:0}
+.registration-actions{display:grid;gap:.8rem;margin-top:.2rem}
+.btn-register-lg{min-height:56px;font-size:1rem;padding:0 1.4rem;box-shadow:0 14px 30px rgba(242,139,17,.22)}
+.btn-register-lg:after{content:"→";margin-left:.65rem;font-size:1.05rem}

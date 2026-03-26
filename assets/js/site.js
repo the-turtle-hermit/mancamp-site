@@ -7,27 +7,6 @@
   });
 
 
-
-  const widgetTarget = document.getElementById('registration-widget');
-  const focusWidget = () => {
-    if (!widgetTarget) return;
-    widgetTarget.classList.add('widget-active');
-    setTimeout(() => widgetTarget.classList.remove('widget-active'), 1800);
-  };
-
-  document.querySelectorAll('[data-scroll-widget]').forEach(link => {
-    link.addEventListener('click', () => {
-      setTimeout(focusWidget, 120);
-    });
-  });
-
-  if (window.location.hash === '#registration-widget') {
-    setTimeout(() => {
-      widgetTarget?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      focusWidget();
-    }, 220);
-  }
-
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 

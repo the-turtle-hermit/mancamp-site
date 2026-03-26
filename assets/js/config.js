@@ -28,10 +28,6 @@ window.MCS_CONFIG = {
         "3060 Shiloh Baptist Church Rd., Amite, LA 70422"
       ],
       [
-        "Venue phone",
-        "225-290-0633"
-      ],
-      [
         "Capacity target",
         "1,500 men"
       ],
@@ -126,7 +122,7 @@ window.MCS_CONFIG = {
     "faq": [
       [
         "Do I need to complete a waiver?",
-        "Yes. A waiver will be built directly into registration and must be accepted before checkout."
+        "Yes. A waiver is included in registration and must be accepted before checkout."
       ],
       [
         "Are refunds available?",
