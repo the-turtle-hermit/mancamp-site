@@ -3,7 +3,7 @@ window.MCS_CONFIG = {
   "event": {
     "status": "Registration opens soon",
     "season": "March 5\u20137, 2027",
-    "location": "Amite City, Louisiana",
+    "location": "Lion King Ministries, 3060 Shiloh Baptist Church Rd., Amite, LA 70422",
     "mission": "Man Camp South exists to disciple men into a deeper relationship with Jesus Christ through fellowship, biblical teachings, and intentional community.",
     "pricingNote": "Flat pricing. No group discounts. Volunteer registration is free. No refunds or cancellations.",
     "details": [
@@ -17,11 +17,19 @@ window.MCS_CONFIG = {
       ],
       [
         "Registration cutoff",
-        "February 19, 2027"
+        "February 20, 2027"
       ],
       [
         "Location",
-        "Amite City, Louisiana"
+        "Lion King Ministries"
+      ],
+      [
+        "Address",
+        "3060 Shiloh Baptist Church Rd., Amite, LA 70422"
+      ],
+      [
+        "Venue phone",
+        "225-290-0633"
       ],
       [
         "Capacity target",
@@ -101,7 +109,7 @@ window.MCS_CONFIG = {
       ],
       [
         "Late",
-        "$139.99 \u00b7 Jan 1 \u2013 Feb 19"
+        "$139.99 \u00b7 Jan 1 \u2013 Feb 20"
       ],
       [
         "Volunteer",

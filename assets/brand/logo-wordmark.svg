@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-label="Man Camp South">
-  <rect width="900" height="220" fill="none"/>
-  <text x="450" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" letter-spacing="2" fill="#1b1f29">MANCAMP</text>
-  <text x="450" y="146" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="8" fill="#1b1f29">SOUTH</text>
-  <rect x="185" y="125" width="110" height="7" rx="3.5" fill="#f28b11"/>
-  <rect x="605" y="125" width="110" height="7" rx="3.5" fill="#f28b11"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="120" viewBox="0 0 520 120" role="img" aria-label="Man Camp South"><rect width="520" height="120" fill="none"/><text x="260" y="48" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="900" letter-spacing="1" fill="#F6F2ED">MANCAMP</text><rect x="90" y="72" width="90" height="6" rx="3" fill="#F28B11"/><rect x="340" y="72" width="90" height="6" rx="3" fill="#F28B11"/><text x="260" y="86" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="900" letter-spacing="8" fill="#F6F2ED">SOUTH</text></svg>
