@@ -8,8 +8,8 @@
   <meta property="og:title" content="Man Camp South 2027" />
   <meta property="og:description" content="Faith-centered men’s camp in Amite City, Louisiana. March 5–7, 2027." />
   <meta property="og:image" content="assets/images/hero-home.jpg" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="alternate icon" href="favicon.png" type="image/png" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" type="text/css" href="https://events.franklynsolutions.com/mancampsouth/mcs-2027/widget/v2.css" crossorigin />
   <script defer src="assets/js/config.js"></script>
@@ -18,20 +18,19 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand brand-text" href="index.html" aria-label="Man Camp South home">
-        <span class="wordmark" aria-hidden="true">
-          <span class="wm-top">MANCAMP</span>
-          <span class="wm-bottom"><span class="wm-line"></span><span>SOUTH</span><span class="wm-line"></span></span>
-        </span>
-      </a>
-      <nav class="nav">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Man Camp South home">
+      <img src="assets/brand/logo-full.png" alt="Man Camp South logo" class="site-logo">
+    </a>
+    <nav class="nav">
+
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="details.html">Details</a>
-      </nav>
-    </div>
-  </header>
+      
+    </nav>
+  </div>
+</header>
 
   <main>
     <section class="hero hero-clean">
@@ -48,7 +47,7 @@
         <div class="hero-aside card glass-card pretix-shell" id="registration-widget">
           <div class="eyebrow">Register on site</div>
           <h3>Reserve your spot without leaving the website.</h3>
-          <pretix-widget event="https://events.franklynsolutions.com/mancampsouth/mcs-2027/" subevent="1"></pretix-widget>
+          <div class="pretix-widget-compat" event="https://events.franklynsolutions.com/mancampsouth/mcs-2027/" subevent="1"></div>
           <div class="pretix-widget-note small">If the embedded form does not fully load, use the direct registration page below.</div>
           <div class="btn-row pretix-actions">
             <a class="btn btn-primary" href="https://events.franklynsolutions.com/mancampsouth/mcs-2027/1/" target="_blank" rel="noopener">Open registration</a>
@@ -71,30 +70,23 @@
         <img src="assets/images/pot-vertical-card.jpg" alt="Dutch oven over the fire">
       </div>
     </section>
-
-    <section class="section-tight">
-      <div class="container quick-grid quick-grid-3">
-        <article class="card flat compact-card"><h3>Dates</h3><p>March 5–7, 2027</p></article>
-        <article class="card flat compact-card"><h3>Location</h3><p>Lion King Ministries<br><span class="small">Amite, Louisiana</span></p></article>
-        <article class="card flat compact-card"><h3>Pricing</h3><p>Early Bird, Standard, Late, and Free Volunteer registration</p></article>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Man Camp South</strong><br>
-        
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="details.html">Details</a>
-        <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
-      </div>
-      <div class="small">© <span id="year"></span> Man Camp South</div>
+  <div class="container footer-inner">
+    <div class="footer-brand-wrap">
+      <a class="footer-brand" href="index.html" aria-label="Man Camp South home">
+        <img src="assets/brand/logo-full.png" alt="Man Camp South logo" class="footer-logo">
+      </a>
     </div>
-  </footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="details.html">Details</a>
+      <a data-email href="mailto:mancampsouth@gmail.com">mancampsouth@gmail.com</a>
+    </div>
+    <div class="small">© <span id="year"></span> Man Camp South</div>
+  </div>
+</footer>
 </body>
 </html>

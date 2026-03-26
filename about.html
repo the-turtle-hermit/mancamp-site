@@ -7,8 +7,8 @@
   <meta name="description" content="What is Man Camp South? Learn the mission and what attendees can expect." />
   
   <meta property="og:title" content="About | Man Camp South" /><meta property="og:description" content="What is Man Camp South? Learn the mission and what attendees can expect." /><meta property="og:image" content="assets/images/hero-home.jpg" />
-  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="alternate icon" href="favicon.png" type="image/png" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/config.js"></script>
   <script defer src="assets/js/site.js"></script>
@@ -17,16 +17,15 @@
   
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand brand-text" href="index.html" aria-label="Man Camp South home">
-      <span class="wordmark" aria-hidden="true">
-        <span class="wm-top">MANCAMP</span>
-        <span class="wm-bottom"><span class="wm-line"></span><span>SOUTH</span><span class="wm-line"></span></span>
-      </span>
+    <a class="brand" href="index.html" aria-label="Man Camp South home">
+      <img src="assets/brand/logo-full.png" alt="Man Camp South logo" class="site-logo">
     </a>
     <nav class="nav">
+
       <a  href="index.html">Home</a>
       <a class="active" href="about.html">About</a>
       <a  href="details.html">Details</a>
+    
     </nav>
   </div>
 </header>
@@ -76,11 +75,17 @@
 
     <section class="section">
       <div class="container">
-        <div class="card speaker-card-full">
-          <div class="eyebrow">Guest speaker</div>
-          <h2>Jonnie W.</h2>
-          <p>Jonnie W. blends music, off-beat standup, and a family-friendly live comedy style. His bio notes performances in 48 states, daily play on SiriusXM, and a Drybar Comedy special with more than 5 million views.</p>
-          <div class="notice">Additional guest speakers are being finalized and will be added here as confirmations are completed.</div>
+        <div class="speaker-feature">
+          <div class="speaker-photo card flat">
+            <img src="assets/images/jonnie-w.jpg" alt="Jonnie W. guest speaker portrait">
+          </div>
+          <div class="card speaker-copy">
+            <div class="eyebrow">Guest speaker</div>
+            <h2>Jonnie W.</h2>
+            <p>Jonnie W. blends music, off-beat standup, and a clean, family-friendly live comedy style. His bio notes performances in 48 states, regular SiriusXM play, and a Dry Bar Comedy special with more than 5 million views.</p>
+            <p>He is known for mixing stand-up, storytelling, and music into a set that is memorable, approachable, and a strong fit for a weekend built around encouragement, fellowship, and faith.</p>
+            <div class="notice">Additional guest speakers are being finalized and will be added here as confirmations are completed.</div>
+          </div>
         </div>
       </div>
     </section>
@@ -88,9 +93,10 @@
   
 <footer class="site-footer">
   <div class="container footer-inner">
-    <div>
-      <strong>Man Camp South</strong><br>
-      
+    <div class="footer-brand-wrap">
+      <a class="footer-brand" href="index.html" aria-label="Man Camp South home">
+        <img src="assets/brand/logo-full.png" alt="Man Camp South logo" class="footer-logo">
+      </a>
     </div>
     <div class="footer-links">
       <a href="index.html">Home</a>
