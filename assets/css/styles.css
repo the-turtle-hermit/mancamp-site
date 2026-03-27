@@ -349,6 +349,55 @@ p{margin:0 0 1rem;color:var(--muted)}
 .footer-brand{display:inline-flex;align-items:center;max-width:100%}
 @media (max-width:680px){
   .hero-subpage{min-height:auto}
-  .site-logo{max-height:44px;width:auto;max-width:min(78vw,340px)}
-  .footer-logo{max-height:40px;width:auto;max-width:min(78vw,340px)}
+  .site-logo{height:auto;width:auto;max-width:100%;max-height:60px;display:block;object-fit:contain}
+  .footer-logo{height:auto;width:auto;max-width:100%;max-height:52px;display:block;object-fit:contain}
+}
+
+
+/* v15 consistency and details cleanup */
+.hero-subpage.hero-subpage-home{
+  position:relative;
+  isolation:isolate;
+  min-height:min(88vh,820px);
+  display:grid;
+  align-items:end;
+}
+.hero-subpage.hero-subpage-home:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    linear-gradient(90deg, rgba(12,14,15,.9) 0%, rgba(12,14,15,.62) 42%, rgba(12,14,15,.9) 100%),
+    linear-gradient(180deg, rgba(12,14,15,.15), rgba(12,14,15,.55)),
+    url('../images/hero-home.jpg') center/cover no-repeat;
+}
+.hero-subpage.hero-subpage-home .hero-inner{
+  padding:7.5rem 0 5rem;
+}
+.section-first-after-hero{
+  padding-top:42px;
+}
+.faq-grid-compact{
+  grid-template-columns:1fr;
+  gap:.85rem;
+  margin-top:.35rem;
+}
+.faq-grid-compact .card.flat{
+  padding:1rem 1rem 1.05rem;
+}
+.faq-grid-compact h3{
+  font-size:1rem;
+  margin-bottom:.35rem;
+}
+@media (max-width:680px){
+  .hero-subpage.hero-subpage-home{
+    min-height:auto;
+  }
+  .hero-subpage.hero-subpage-home .hero-inner{
+    padding:6.5rem 0 4rem;
+  }
+  .section-first-after-hero{
+    padding-top:30px;
+  }
 }
