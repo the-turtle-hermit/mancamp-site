@@ -401,3 +401,13 @@ p{margin:0 0 1rem;color:var(--muted)}
     padding-top:18px;
   }
 }
+
+
+.install-section-wrap{padding-top:0;padding-bottom:60px}
+.install-card{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:1.4rem;align-items:center}
+.install-instructions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
+.install-step-card{padding:1rem 1.05rem;border-radius:18px;background:rgba(255,255,255,.03);border:1px solid var(--line)}
+.install-step-card p{margin:.45rem 0 0}
+.install-actions{display:grid;gap:.9rem;justify-items:start}
+.install-btn[hidden]{display:none!important}
+@media (max-width:900px){.install-card,.install-instructions{grid-template-columns:1fr}}
