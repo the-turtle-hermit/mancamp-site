@@ -76,3 +76,40 @@
     }).join('');
   }
 })();
+
+(function () {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
+
+  let deferredPrompt = null;
+  const installBtn = document.getElementById('installBtn');
+  const installStatus = document.getElementById('installStatus');
+
+  window.addEventListener('beforeinstallprompt', function (event) {
+    event.preventDefault();
+    deferredPrompt = event;
+    if (installBtn) installBtn.hidden = false;
+    if (installStatus) installStatus.textContent = 'This browser can install the Man Camp South app.';
+  });
+
+  window.addEventListener('appinstalled', function () {
+    if (installBtn) installBtn.hidden = true;
+    if (installStatus) installStatus.textContent = 'App installed successfully.';
+    deferredPrompt = null;
+  });
+
+  if (installBtn) {
+    installBtn.addEventListener('click', async function () {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      try {
+        await deferredPrompt.userChoice;
+      } catch (e) {}
+      deferredPrompt = null;
+      installBtn.hidden = true;
+    });
+  }
+})();

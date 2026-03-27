@@ -27,3 +27,10 @@ Updated in v5: removed venue phone number so attendee contact stays focused on M
 
 
 Updated in v6: homepage simplified, original headline restored, Pretix widget embedded on home, speaker moved to About, venue image added to Details, and new uploaded photos incorporated.
+
+PWA files added:
+- manifest.webmanifest
+- sw.js
+- /icons/*.png
+
+To test installability, deploy these files on HTTPS and open the site from a real phone browser. iPhone users install from Safari > Share > Add to Home Screen. Android users should see the in-site Install App button on supported browsers.
