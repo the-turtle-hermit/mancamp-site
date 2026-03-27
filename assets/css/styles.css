@@ -373,10 +373,10 @@ p{margin:0 0 1rem;color:var(--muted)}
     url('../images/hero-home.jpg') center/cover no-repeat;
 }
 .hero-subpage.hero-subpage-home .hero-inner{
-  padding:7.5rem 0 5rem;
+  padding:4.75rem 0 3.25rem;
 }
 .section-first-after-hero{
-  padding-top:42px;
+  padding-top:24px;
 }
 .faq-grid-compact{
   grid-template-columns:1fr;
@@ -395,9 +395,9 @@ p{margin:0 0 1rem;color:var(--muted)}
     min-height:auto;
   }
   .hero-subpage.hero-subpage-home .hero-inner{
-    padding:6.5rem 0 4rem;
+    padding:4rem 0 2.5rem;
   }
   .section-first-after-hero{
-    padding-top:30px;
+    padding-top:18px;
   }
 }
