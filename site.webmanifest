@@ -1,7 +1,7 @@
 {
   "name": "Man Camp South",
   "short_name": "Man Camp South",
-  "start_url": "/",
+  "start_url": "/?source=pwa-v26",
   "scope": "/",
   "display": "standalone",
   "background_color": "#141619",
@@ -19,5 +19,5 @@
       "type": "image/png"
     }
   ],
-  "id": "/"
+  "id": "/?source=pwa-v26"
 }

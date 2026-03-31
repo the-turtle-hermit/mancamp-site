@@ -1,41 +1,62 @@
-const CACHE_NAME = 'mcs-pwa-v1';
-const URLS_TO_CACHE = [
-  './',
+const CACHE_NAME = 'mcs-pwa-v26';
+const CORE_ASSETS = [
   '/',
-  './index.html',
-  './about.html',
-  './details.html',
-  './assets/css/styles.css',
-  './assets/js/config.js',
-  './assets/js/site.js',
-  './assets/brand/logo-full.png',
-  './assets/brand/logo-icon.png',
-  './favicon.png',
-  './icon-192.png',
-  './icon-512.png'
+  '/about/',
+  '/details/',
+  '/assets/css/styles.css',
+  '/assets/js/config.js',
+  '/assets/js/site.js',
+  '/assets/brand/logo-full.png',
+  '/assets/brand/logo-icon.png',
+  '/favicon.png',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/site.webmanifest'
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(URLS_TO_CACHE)).then(() => self.skipWaiting()));
+  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(CORE_ASSETS)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys().then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))).then(() => self.clients.claim())
+    caches.keys()
+      .then(keys => Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key))))
+      .then(() => self.clients.claim())
   );
 });
 
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
+  const request = event.request;
+  const accept = request.headers.get('accept') || '';
+  const isHtml = request.mode === 'navigate' || accept.includes('text/html');
+
+  if (isHtml) {
+    event.respondWith(
+      fetch(request)
+        .then(response => {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+          return response;
+        })
+        .catch(async () => {
+          const cached = await caches.match(request);
+          return cached || caches.match('/');
+        })
+    );
+    return;
+  }
+
   event.respondWith(
-    caches.match(event.request).then(cached => {
+    caches.match(request).then(cached => {
       if (cached) return cached;
-      return fetch(event.request).then(response => {
+      return fetch(request).then(response => {
         if (!response || response.status !== 200 || response.type !== 'basic') return response;
-        const responseClone = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
         return response;
-      }).catch(() => caches.match('/') || caches.match('./index.html'));
+      });
     })
   );
 });

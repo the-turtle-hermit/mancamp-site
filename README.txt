@@ -27,3 +27,5 @@ Updated in v5: removed venue phone number so attendee contact stays focused on M
 
 
 Updated in v6: homepage simplified, original headline restored, Pretix widget embedded on home, speaker moved to About, venue image added to Details, and new uploaded photos incorporated.
+
+Updated in v26: fixed routing for About/Details with folder-based URLs and redirects, updated the PWA cache/versioning, and changed the service worker to network-first for HTML so old broken pages stop being served from cache.
