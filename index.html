@@ -9,7 +9,11 @@
   <meta property="og:description" content="Faith-centered men’s camp in Amite City, Louisiana focused on discipleship, fellowship, and biblical teaching. March 5–7, 2027." />
   <meta property="og:image" content="assets/images/hero-home.jpg" />
   <link rel="icon" href="favicon.png" type="image/png" />
-  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <meta name="theme-color" content="#141619" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/config.js"></script>
   <script defer src="assets/js/site.js"></script>
@@ -49,6 +53,16 @@
             <a class="btn btn-primary btn-register-lg" href="https://events.franklynsolutions.com/mancampsouth/mcs-2027" target="_blank" rel="noopener">Open registration</a>
             <div class="small">March 5–7, 2027 • Amite, Louisiana</div>
           </div>
+          <div class="install-panel" id="install-panel">
+            <div class="install-badge">Get the app</div>
+            <h3>Add Man Camp South to your phone.</h3>
+            <p class="small-card-copy">Install on iPhone or Android for quick access from your home screen.</p>
+            <div class="install-actions">
+              <button class="btn btn-primary" type="button" id="install-app-btn">Download app</button>
+              <div class="small" id="install-status">Works on iPhone and Android</div>
+            </div>
+            <div class="install-help" id="install-help" hidden></div>
+          </div>
         </div>
       </div>
     </section>
@@ -78,5 +92,16 @@
     <div class="small">© <span id="year"></span> Man Camp South</div>
   </div>
 </footer>
+  <div class="install-modal" id="install-modal" hidden>
+    <div class="install-dialog">
+      <div class="install-badge">Install Man Camp South</div>
+      <h3 id="install-modal-title">Add this site to your home screen</h3>
+      <p id="install-modal-copy">Use the steps below to install the site like an app.</p>
+      <div class="install-steps" id="install-steps"></div>
+      <div class="btn-row">
+        <button class="btn btn-primary" type="button" id="install-close-btn">Done</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
