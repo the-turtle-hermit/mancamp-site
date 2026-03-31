@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Guest speaker placeholder</title>
+  <desc id="desc">Placeholder artwork for a future guest speaker announcement.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f28b11"/>
+      <stop offset="100%" stop-color="#ffb24a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1200" rx="48" fill="url(#bg)"/>
+  <circle cx="600" cy="420" r="160" fill="#d8d8d8" opacity="0.88"/>
+  <path d="M300 920c36-174 166-280 300-280s264 106 300 280" fill="#d8d8d8" opacity="0.88"/>
+  <rect x="180" y="160" width="840" height="880" rx="36" fill="none" stroke="url(#accent)" stroke-width="20" opacity="0.9"/>
+  <circle cx="930" cy="270" r="68" fill="#161616" stroke="url(#accent)" stroke-width="14"/>
+  <path d="M930 228v84M888 270h84" stroke="url(#accent)" stroke-width="18" stroke-linecap="round"/>
+  <text x="600" y="1035" text-anchor="middle" fill="#f5f5f5" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" letter-spacing="4">GUEST SPEAKER</text>
+  <text x="600" y="1098" text-anchor="middle" fill="#cfcfcf" font-family="Arial, Helvetica, sans-serif" font-size="34" letter-spacing="2">Announcement coming soon</text>
+</svg>

@@ -20,7 +20,7 @@ Main editable files:
 - index.html / about.html / details.html -> page structure
 
 
-Updated in v4: venue details added for Lion King Ministries and Jonnie W. added as featured guest speaker.
+Updated in v4: venue details added for Lion King Ministries and featured speaker section updated.
 
 
 Updated in v5: removed venue phone number so attendee contact stays focused on Man Camp South.
