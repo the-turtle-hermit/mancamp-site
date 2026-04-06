@@ -676,3 +676,13 @@ p{margin:0 0 1rem;color:var(--muted)}
 .nav-socials .social-link{
   border-radius:999px;
 }
+
+
+/* fixed hero background on desktop */
+@media (min-width:681px){
+  .hero:before,
+  .hero-subpage:before,
+  .hero-subpage.hero-subpage-home:before{
+    background-attachment:scroll, scroll, fixed;
+  }
+}
