@@ -511,3 +511,82 @@ p{margin:0 0 1rem;color:var(--muted)}
   .footer-socials{width:100%}
   .social-pill{justify-content:center;flex:1 1 160px}
 }
+
+
+/* v25 social icon cleanup */
+.nav{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}
+.nav-socials,.footer-socials{display:flex;align-items:center;gap:.5rem}
+.social-icon-link{
+  width:42px;
+  height:42px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
+  color:var(--text);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.social-icon-link:hover{
+  transform:translateY(-1px);
+  border-color:rgba(242,139,17,.35);
+  background:linear-gradient(180deg,rgba(242,139,17,.12),rgba(255,255,255,.03));
+}
+.social-icon-link .social-icon{
+  width:18px;
+  height:18px;
+  border:none;
+  background:transparent;
+  font-size:1rem;
+}
+.footer-links-wrap{display:grid;gap:.9rem}
+.footer-links,.footer-socials{align-items:center}
+.footer-socials{justify-content:flex-start}
+.social-pill{all:unset}
+@media (max-width:680px){
+  .nav{gap:.2rem;justify-content:flex-end;flex-wrap:nowrap}
+  .nav-socials{gap:.35rem;margin-right:.15rem}
+  .social-icon-link{width:38px;height:38px}
+  .footer-socials{width:auto}
+}
+
+
+/* Footer social cleanup */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-links .social-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  flex: 0 0 auto;
+}
+
+.footer-links .social-icon:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.footer-links .footer-email {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-links a:not(.social-icon) {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-links a:not(.social-icon):hover {
+  color: #fff;
+}
