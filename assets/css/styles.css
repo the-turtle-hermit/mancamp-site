@@ -473,120 +473,206 @@ p{margin:0 0 1rem;color:var(--muted)}
 
 
 /* social links */
-.footer-links-wrap{display:grid;gap:.9rem}
-.footer-socials{display:flex;gap:.75rem;flex-wrap:wrap}
-.social-pill{
-  display:inline-flex;
-  align-items:center;
-  gap:.65rem;
-  padding:.72rem 1rem;
-  border-radius:999px;
-  border:1px solid rgba(255,255,255,.1);
-  background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.025));
-  color:var(--text);
-  box-shadow:0 10px 24px rgba(0,0,0,.18);
-  transition:transform .18s ease,border-color .18s ease,background .18s ease,box-shadow .18s ease;
-}
-.social-pill:hover{
-  transform:translateY(-2px);
-  border-color:rgba(242,139,17,.4);
-  background:linear-gradient(180deg,rgba(242,139,17,.14),rgba(255,255,255,.04));
-  box-shadow:0 16px 32px rgba(0,0,0,.22);
-}
-.social-icon{
-  width:30px;
-  height:30px;
-  border-radius:50%;
-  display:inline-grid;
-  place-items:center;
-  background:rgba(255,255,255,.08);
-  color:#fff;
-  font-weight:900;
-  font-size:.96rem;
-  line-height:1;
-  border:1px solid rgba(255,255,255,.08);
-}
-@media (max-width:680px){
-  .footer-links-wrap{width:100%}
-  .footer-socials{width:100%}
-  .social-pill{justify-content:center;flex:1 1 160px}
-}
-
-
-/* v25 social icon cleanup */
-.nav{display:flex;gap:.45rem;flex-wrap:wrap;align-items:center}
-.nav-socials,.footer-socials{display:flex;align-items:center;gap:.5rem}
-.social-icon-link{
-  width:42px;
-  height:42px;
+.header-socials,.footer-socials{display:flex;align-items:center;gap:.55rem;flex-wrap:wrap}
+.social-link{
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  gap:.55rem;
+  min-width:42px;
+  height:42px;
+  padding:0 .9rem;
   border-radius:999px;
   border:1px solid rgba(255,255,255,.14);
-  background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
-  color:var(--text);
-  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+  background:rgba(255,255,255,.03);
+  color:var(--muted);
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,color .18s ease;
 }
-.social-icon-link:hover{
+.social-link:hover{
   transform:translateY(-1px);
-  border-color:rgba(242,139,17,.35);
-  background:linear-gradient(180deg,rgba(242,139,17,.12),rgba(255,255,255,.03));
+  color:var(--text);
+  border-color:rgba(255,255,255,.26);
+  background:rgba(255,255,255,.06);
 }
-.social-icon-link .social-icon{
-  width:18px;
-  height:18px;
-  border:none;
-  background:transparent;
-  font-size:1rem;
+.social-link-header{
+  width:40px;
+  min-width:40px;
+  height:40px;
+  padding:0;
 }
+
 .footer-links-wrap{display:grid;gap:.9rem}
-.footer-links,.footer-socials{align-items:center}
-.footer-socials{justify-content:flex-start}
-.social-pill{all:unset}
+.footer-links-wrap .footer-links{align-items:center}
+.footer-socials .social-link{font-size:.95rem;font-weight:700}
+.footer-inner{align-items:center}
+@media (max-width:860px){
+  .header-inner{flex-wrap:wrap}
+  .nav{order:2;flex:1 1 100%;justify-content:flex-start}
+  .header-socials{margin-left:auto}
+}
 @media (max-width:680px){
-  .nav{gap:.2rem;justify-content:flex-end;flex-wrap:nowrap}
-  .nav-socials{gap:.35rem;margin-right:.15rem}
-  .social-icon-link{width:38px;height:38px}
-  .footer-socials{width:auto}
+  .header-inner{
+    min-height:72px;
+    gap:.6rem;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .brand{flex:0 0 auto;min-width:0}
+  .brand img.site-logo{max-height:52px;width:auto;display:block}
+  .nav{
+    order:2;
+    flex:1 1 100%;
+    width:100%;
+    gap:.22rem;
+    justify-content:flex-start;
+    align-items:center;
+    flex-wrap:wrap;
+    padding-top:.15rem;
+  }
+  .nav a{padding:.42rem .58rem;font-size:.88rem;line-height:1}
+  .header-socials{order:1;flex:0 0 auto;gap:.4rem}
+  .social-link-header{width:36px;min-width:36px;height:36px}
+  .footer-links-wrap{width:100%}
+  .footer-links{width:100%}
+  .footer-socials{width:100%}
+  .footer-socials .social-link{justify-content:center;flex:1 1 140px}
 }
 
 
-/* Footer social cleanup */
-.footer-links {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
+
+
+/* v27 header + footer icon alignment cleanup */
+.nav{
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
-.footer-links .social-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.2);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  text-decoration: none;
-  flex: 0 0 auto;
+.nav-socials{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+  margin-right:.25rem;
 }
 
-.footer-links .social-icon:hover {
-  background: rgba(255,255,255,0.08);
+.social-link-footer{
+  width:40px;
+  min-width:40px;
+  height:40px;
+  padding:0;
 }
 
-.footer-links .footer-email {
-  color: #ccc;
-  font-size: 14px;
+.footer-inner{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  align-items:center;
+  gap:1.5rem;
 }
 
-.footer-links a:not(.social-icon) {
-  color: #ccc;
-  text-decoration: none;
+.footer-links-wrap{
+  display:flex;
+  justify-content:center;
 }
 
-.footer-links a:not(.social-icon):hover {
-  color: #fff;
+.footer-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.footer-socials{
+  display:flex;
+  align-items:center;
+  gap:.5rem;
+}
+
+.footer-links{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  flex-wrap:wrap;
+}
+
+.footer-links a{
+  color:var(--muted);
+  text-decoration:none;
+}
+
+.footer-links a:hover{
+  color:var(--text);
+}
+
+@media (max-width:900px){
+  .footer-inner{
+    grid-template-columns:1fr;
+    justify-items:center;
+    text-align:center;
+    gap:1rem;
+  }
+}
+
+@media (max-width:680px){
+  .nav{
+    gap:.35rem;
+    justify-content:flex-start;
+    width:100%;
+  }
+  .nav-socials{
+    order:-1;
+    margin-right:.1rem;
+  }
+  .footer-row{
+    gap:.75rem;
+  }
+}
+
+
+
+
+/* force sharper rendering */
+.social-svg{
+  shape-rendering:geometricPrecision;
+}
+
+
+/* v30 actual top icon size fix */
+.social-link{
+  width:40px;
+  height:40px;
+  min-width:40px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.nav-socials .social-link,
+.footer-socials .social-link{
+  width:40px;
+  height:40px;
+  min-width:40px;
+  padding:0;
+}
+
+.nav-socials .social-svg,
+.footer-socials .social-svg{
+  width:20px !important;
+  height:20px !important;
+  display:block;
+  shape-rendering:geometricPrecision;
+  transform:none !important;
+}
+
+.nav-socials .social-link svg,
+.footer-socials .social-link svg{
+  width:20px !important;
+  height:20px !important;
+  display:block;
+}
+
+.nav-socials .social-link{
+  border-radius:999px;
 }
