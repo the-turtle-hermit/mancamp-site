@@ -686,3 +686,5 @@ p{margin:0 0 1rem;color:var(--muted)}
     background-attachment:scroll, scroll, fixed;
   }
 }
+
+.btn-inline{min-height:42px;padding:0 .95rem;font-size:.94rem}

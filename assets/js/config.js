@@ -1,7 +1,8 @@
 window.MCS_CONFIG = {
   "contactEmail": "mancampsouth@gmail.com",
+  "registrationUrl": "https://events.franklynsolutions.com/mancampsouth/mcs-2027",
   "event": {
-    "status": "Registration opens soon",
+    "status": "Registration and donations are open",
     "season": "March 5\u20137, 2027",
     "location": "Lion King Ministries, 3060 Shiloh Baptist Church Rd., Amite, LA 70422",
     "mission": "Man Camp South exists to disciple men into a deeper relationship with Jesus Christ through fellowship, biblical teachings, and intentional community.",
@@ -50,6 +51,10 @@ window.MCS_CONFIG = {
       [
         "Contact",
         "mancampsouth@gmail.com"
+      ],
+      [
+        "Support",
+        "Donations available through the official event portal"
       ]
     ],
     "schedule": [
@@ -143,6 +148,10 @@ window.MCS_CONFIG = {
       [
         "Will there be speakers listed later?",
         "Yes. Speaker photos and short bios will be added once guest speakers are aligned and contracted."
+      ],
+      [
+        "Can I support Man Camp South without attending?",
+        "Yes. The official event portal also accepts donations for those who want to support the mission even if they are not registering to attend."
       ],
       [
         "Do I need to be outdoorsy to come?",

@@ -2,7 +2,6 @@
   const cfg = window.MCS_CONFIG || {};
   document.querySelectorAll('[data-email]').forEach(el => {
     const email = cfg.contactEmail || 'mancampsouth@gmail.com';
-    el.textContent = email;
     if (el.tagName === 'A') el.href = `mailto:${email}`;
   });
 
@@ -21,8 +20,18 @@
 
   const details = document.getElementById('event-details');
   if (details && cfg.event?.details) {
-    details.innerHTML = cfg.event.details.map(([k, v]) => `
-      <div class="kv-row"><strong>${k}</strong><div>${v}</div></div>`).join('');
+    const email = cfg.contactEmail || 'mancampsouth@gmail.com';
+    const registrationUrl = cfg.registrationUrl || 'https://events.franklynsolutions.com/mancampsouth/mcs-2027';
+    details.innerHTML = cfg.event.details.map(([k, v]) => {
+      let value = v;
+      if (k === 'Contact') {
+        value = `<a class="btn btn-secondary btn-inline" href="mailto:${email}">Contact us by email</a>`;
+      }
+      if (k === 'Support') {
+        value = `<a class="btn btn-secondary btn-inline" href="${registrationUrl}" target="_blank" rel="noopener">Support Man Camp South</a>`;
+      }
+      return `<div class="kv-row"><strong>${k}</strong><div>${value}</div></div>`;
+    }).join('');
   }
 
   const pricing = document.getElementById('pricing-grid');
