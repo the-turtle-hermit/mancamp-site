@@ -1,4 +1,4 @@
-const CACHE_NAME = 'mcs-pwa-v27';
+const CACHE_NAME = 'mancamp-site-v25';
 const CORE_ASSETS = [
   '/',
   '/about/',

@@ -688,3 +688,43 @@ p{margin:0 0 1rem;color:var(--muted)}
 }
 
 .btn-inline{min-height:42px;padding:0 .95rem;font-size:.94rem}
+
+
+/* v25 final header logo fix: use tightly-cropped logo-header.png */
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+.brand img.site-logo {
+  display: block;
+  width: auto !important;
+  height: 72px !important;
+  max-height: 72px !important;
+  max-width: 280px !important;
+  object-fit: contain;
+}
+
+.footer-logo {
+  display: block;
+  width: auto !important;
+  height: 58px !important;
+  max-height: 58px !important;
+  max-width: 260px !important;
+  object-fit: contain;
+}
+
+@media (max-width: 680px) {
+  .brand img.site-logo {
+    height: 56px !important;
+    max-height: 56px !important;
+    max-width: 190px !important;
+  }
+
+  .footer-logo {
+    height: 52px !important;
+    max-height: 52px !important;
+    max-width: 220px !important;
+  }
+}
