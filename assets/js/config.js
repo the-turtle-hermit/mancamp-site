@@ -14,6 +14,10 @@ window.MCS_CONFIG = {
     "pricingNote": "Registration fee will increase after Aug 1, 2026.",
     "details": [
       [
+        "Eligibility",
+        "Men ages 18 and older"
+      ],
+      [
         "Event",
         "Man Camp South 2027"
       ],
@@ -56,6 +60,10 @@ window.MCS_CONFIG = {
       [
         "March 1 – Aug 1",
         "$119.99"
+      ],
+      [
+        "Volunteer Registration",
+        "$79.00"
       ]
     ],
     "bring": [
